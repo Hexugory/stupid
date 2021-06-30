@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { readdir } = require('fs/promises');
 
-readdir('voice_fucker_avatars').then((files) => {
+readdir('avatars').then((files) => {
     for (const name of files) {
         fs.writeFileSync(`in/${name.slice(0, -4)}.json`,
 `{

@@ -7,7 +7,7 @@ readdir('in').then((files) => {
         const p = JSON.parse(readFileSync('in/'+file));
         const canvas = createCanvas(350, 610);
         const ctx = canvas.getContext('2d');
-        loadImage(`voice_fucker_avatars/${p.name}.png`).then((image) => {
+        loadImage(`avatars/${p.name}.png`).then((image) => {
             ctx.fillStyle = '#36393f';
             ctx.fillRect(0, 0, 350, 610);
 
